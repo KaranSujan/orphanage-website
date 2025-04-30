@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; }
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set your desired height */
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .people-carousel {
+    position: relative; /* For positioning navigation buttons */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .person-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Adjust size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-content {
+    flex-grow: 1;
+  }
+  
+  .quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .title {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .nav-button img {
+    width: 24px; /* Adjust arrow size */
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-button img:hover {
+    opacity: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Adjust styling for smaller screens if needed */
+  @media (max-width: 600px) {
+    .person-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    .image-container {
+      margin: 0 auto 20px;
+    }
+    .nav-button {
+      top: auto;
+      bottom: -40px; /* Adjust position for smaller screens */
+      transform: translateY(0);
+    }
+    .prev {
+      left: 20%;
+    }
+    .next {
+      right: 20%;
+    }
+  }

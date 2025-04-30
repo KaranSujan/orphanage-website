@@ -1,0 +1,70 @@
+/* ... other styles for your AboutUs page ... */
+
+.image-container {
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin-left: auto;  /* Change these two lines */
+    margin-right: auto; /* to auto */
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+  
+  .text-content {
+    text-align: center;
+  }
+  
+  .text-content .quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+  
+  .text-content .name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #3b82f6;
+    margin-bottom: 0.25rem;
+  }
+  
+  .text-content .title {
+    color: #718096;
+    font-size: 0.875rem;
+  }
+  
+  .absolute-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f3f4f6;
+    color: #4a5568;
+    border-radius: 9999px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .absolute-nav-button:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .absolute-nav-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .left-4 {
+    left: 1rem;
+  }
+  
+  .right-4 {
+    right: 1rem;
+  }
